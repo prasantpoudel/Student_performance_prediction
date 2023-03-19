@@ -81,8 +81,8 @@ class ModelTrainer:
                     # 'loss':['linear','square','exponential'],
                     'n_estimators': [8,16,32,64,128,256]
                 }
-                
             }
+            logging.info("paramter has beeen checks")
             model_report:dict=evaluate_models(x_train=x_train,y_train=y_train,x_test=x_test,y_test=y_test,
                                              models=models,params=params)
             
